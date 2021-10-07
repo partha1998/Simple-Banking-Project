@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank page</title>
+</head>
+<body>
+    {{>header}}
+    <div style="text-align: center;">
+        <p>this is a demo bank</p>
+        <form action="/send" method="POST">
+            enter amount in wei to send <input type="number" name="money" /><br>
+            <input type="submit" value="send">
+        </form>
+    <br><br><br>
+        <form action="/wdraw" method="POST">
+            enter amount in wei to withdraw<input type="number" name="money" /><br>
+            <input type="submit" value="withdraw">
+        </form>
+
+         <h3>your balance is in ether :{{bal}}</h3>
+         <a href="/logs">see your logs</a>
+    </div>
+</body>
+</html>

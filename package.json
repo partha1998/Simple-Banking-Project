@@ -1,0 +1,20 @@
+{
+  "name": "pay_withdraw_event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "partha",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "web3": "^1.6.0"
+  }
+}
